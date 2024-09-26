@@ -37,6 +37,20 @@ ProxyServerPort=3128
 UseCompression=False
 ```
 
+## Examples
+
+### Without Redirect
+![Without Redirect](images/without_redirect.gif)
+
+### With Redirect
+![With Redirect](images/with_redirect.gif)
+
+### Server Running on Windows
+![Server](images/server.gif)
+
+
+
+
 ## Support
 
 My name is Sarah Rose, and I like to make stuff. If you've found this useful I have a patreon at https://patreon.com/SarahRoseLives if you'd like to help support my projects or just to say thanks.
