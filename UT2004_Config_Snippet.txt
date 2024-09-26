@@ -1,0 +1,5 @@
+[IpDrv.HTTPDownload]
+RedirectToURL=http://127.0.0.1/
+ProxyServerHost=
+ProxyServerPort=3128
+UseCompression=False
