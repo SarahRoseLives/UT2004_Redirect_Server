@@ -7,7 +7,7 @@ Recently I decided to setup a server again and I was reminded that the game down
 
 ## The Solution
 
-This application runs anywhere python runs, and for my Windows users I ever provide you an executable so you don't need to figure out python if you don't want to.
+This application runs anywhere python runs, and for my Windows users I even provide you an executable so you don't need to figure out python if you don't want to.
 
 You simply update the config.ini file with the location of your UT2004 server and it will make all necessary files available to the redirection service. By default it runs on port 80 localhost but you could bind it for internet use if you really wanted to.
 
