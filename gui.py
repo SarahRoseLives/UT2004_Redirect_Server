@@ -5,7 +5,6 @@ import threading
 from tkinter import Tk, Label, Entry, Button, filedialog, END
 from flask import Flask, render_template, send_file
 from tkinter.scrolledtext import ScrolledText
-import time
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -20,6 +19,17 @@ else:
     base_dir = os.path.dirname(os.path.abspath(__file__))
 config_path = os.path.join(base_dir, 'config.ini')
 
+# Check if config file exists, and create it with default values if it doesn't
+if not os.path.exists(config_path):
+    default_config = """[server]
+directory = C:/Users/SarahRose/Downloads/DedicatedServer3339-BonusPack
+extensions = utx, ukx, ut2, uax, usx, u, ucl
+host = 127.0.0.1
+"""
+    with open(config_path, 'w') as configfile:
+        configfile.write(default_config)
+
+# Read configuration
 config.read(config_path)
 
 # Read initial values from the config file

@@ -16,9 +16,19 @@ else:
 # Path to the config file
 config_path = os.path.join(base_dir, 'config.ini')
 
+# Check if the config file exists, and create it with default values if it doesn't
+if not os.path.exists(config_path):
+    default_config = """[server]
+directory = C:/Users/SarahRose/Downloads/DedicatedServer3339-BonusPack
+extensions = utx, ukx, ut2, uax, usx, u, ucl
+host = 127.0.0.1
+"""
+    with open(config_path, 'w') as f:
+        f.write(default_config)
+
+# Load the configuration
 config = configparser.ConfigParser()
 config.read(config_path)
-
 
 # Directory where files are located
 files_dir = config['server']['directory']
